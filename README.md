@@ -16,6 +16,11 @@
     uvicorn app:app --reload
 
 ## Usage
+
+### Using swagger
+ #### Open http://127.0.0.1:8000/docs and check all APIS
+
+### Using Curl
 ### POST an observation (valid data)
 ```bash
 curl -X POST "http://127.0.0.1:8000/observation" -H "Content-Type: application/json" -d '{
