@@ -2,8 +2,10 @@
 
 ## Setup
 
-1. Clone the repository.  
-2. Create a virtual environment and activate it:  
+### Using GitHub
+1. If you have zip file, Extract it and follow next step.If you wynt to use github. Clone the repository and follow next steps.  
+2. Create a virtual environment and 
+activate it:  
    ```bash
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
