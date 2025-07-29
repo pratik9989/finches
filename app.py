@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request, HTTPException
-from pydantic import BaseModel, StrictFloat, StrictStr
+from pydantic import BaseModel, StrictFloat, StrictStr, HttpUrl
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.status import HTTP_400_BAD_REQUEST, HTTP_500_INTERNAL_SERVER_ERROR
@@ -19,7 +19,7 @@ class Observation(BaseModel):
     observation_id: StrictStr
     user_id: StrictStr
     text_observation: StrictStr
-    photo_url: StrictStr
+    photo_url: HttpUrl
     location: Location
 
 # Custom validation, By default fastapi send 422 status code but we need 400
